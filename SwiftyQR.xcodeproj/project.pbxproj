@@ -11,6 +11,9 @@
 		889100612956B9D7006AE5DB /* SwiftyQR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 889100562956B9D7006AE5DB /* SwiftyQR.framework */; };
 		889100662956B9D7006AE5DB /* SwiftyQRTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889100652956B9D7006AE5DB /* SwiftyQRTests.swift */; };
 		889100672956B9D7006AE5DB /* SwiftyQR.h in Headers */ = {isa = PBXBuildFile; fileRef = 889100592956B9D7006AE5DB /* SwiftyQR.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		889100712956BC0C006AE5DB /* CameraService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889100702956BC0C006AE5DB /* CameraService.swift */; };
+		889100732956C2F2006AE5DB /* MetaDataOutputService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889100722956C2F1006AE5DB /* MetaDataOutputService.swift */; };
+		889100762956CBB7006AE5DB /* MetaDataOutputService + Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889100752956CBB7006AE5DB /* MetaDataOutputService + Delegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +32,9 @@
 		8891005A2956B9D7006AE5DB /* SwiftyQR.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = SwiftyQR.docc; sourceTree = "<group>"; };
 		889100602956B9D7006AE5DB /* SwiftyQRTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftyQRTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		889100652956B9D7006AE5DB /* SwiftyQRTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyQRTests.swift; sourceTree = "<group>"; };
+		889100702956BC0C006AE5DB /* CameraService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraService.swift; sourceTree = "<group>"; };
+		889100722956C2F1006AE5DB /* MetaDataOutputService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetaDataOutputService.swift; sourceTree = "<group>"; };
+		889100752956CBB7006AE5DB /* MetaDataOutputService + Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MetaDataOutputService + Delegate.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +77,7 @@
 		889100582956B9D7006AE5DB /* SwiftyQR */ = {
 			isa = PBXGroup;
 			children = (
+				889100742956CB94006AE5DB /* Service */,
 				889100592956B9D7006AE5DB /* SwiftyQR.h */,
 				8891005A2956B9D7006AE5DB /* SwiftyQR.docc */,
 			);
@@ -83,6 +90,16 @@
 				889100652956B9D7006AE5DB /* SwiftyQRTests.swift */,
 			);
 			path = SwiftyQRTests;
+			sourceTree = "<group>";
+		};
+		889100742956CB94006AE5DB /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				889100702956BC0C006AE5DB /* CameraService.swift */,
+				889100722956C2F1006AE5DB /* MetaDataOutputService.swift */,
+				889100752956CBB7006AE5DB /* MetaDataOutputService + Delegate.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +211,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				889100712956BC0C006AE5DB /* CameraService.swift in Sources */,
+				889100732956C2F2006AE5DB /* MetaDataOutputService.swift in Sources */,
+				889100762956CBB7006AE5DB /* MetaDataOutputService + Delegate.swift in Sources */,
 				8891005B2956B9D7006AE5DB /* SwiftyQR.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -396,6 +416,7 @@
 		8891006E2956B9D7006AE5DB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = YHL6YP9PRW;
@@ -412,6 +433,7 @@
 		8891006F2956B9D7006AE5DB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = YHL6YP9PRW;
